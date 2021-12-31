@@ -33,7 +33,7 @@ build=${AUTOBUILD_BUILD_ID:=0}
 echo "1.1.0" > "$stage/VERSION.txt"
 
 case "$AUTOBUILD_PLATFORM" in
-    windows* | darwin64)
+    common)
 
         mkdir -p "$stage/js"
         mkdir -p "$stage/LICENSES"
