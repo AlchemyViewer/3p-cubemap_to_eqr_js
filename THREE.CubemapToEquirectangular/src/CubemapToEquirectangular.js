@@ -168,7 +168,7 @@ void main() {
         var imageData = new ImageData(new Uint8ClampedArray(pixels), this.width, this.height);
 
         var encoder = new JPEGEncoder(90);
-        var jpegURI = encoder.encode(imageData, 90, xmp_details);
+        var jpegURI = encoder.encode(imageData, 100, xmp_details);
         var blob = this.dataURItoBlob(jpegURI);
 
         var url = URL.createObjectURL(blob);
